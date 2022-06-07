@@ -86,7 +86,7 @@ h2 {
 }
 
 .main .col h2 {
-  background: #000;
+  background: rgba(0,0,0,0.70);
   text-align: center;
   color: #fff;
   padding-top: 1rem;
@@ -105,15 +105,28 @@ h2 {
 }
 
 .btn-link {
-  background-color: #000;
+  background-color: rgba(0,0,0,0.75);
   color: #fff;
-  padding: 8px 25px;
+  width: 124px;
+  text-align: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
   font-size: 1rem;
-  border: 1px solid #fff;
+  border: 1px solid rgba(255,255,255,0.5);
+  position: absolute;
+  bottom: 120px;
+  left: calc(50% - 124px / 2);
 }
 
 .btn-link:hover, .btn-link:active {
-  background: #fff;
+  background: rgba(255,255,255,0.75);
   color: #000;
-  border: 1px solid #000;
+  border: 1px solid rgba(0,0,0,0.5);
+}
+
+/* 첫번째 칼럼 배경 스타일 지정 */
+.main .col:first-child {
+  background-image: url('../images/beijing.jpg');
+  background-size: cover;
+  /* background-position: center; */
 }
